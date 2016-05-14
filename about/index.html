@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Uber Fare Calculator</title>
+    <title>Uber Fare Calculator: About</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -35,8 +35,8 @@ body {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="#">About</a></li>
 <!--            <li><a href="#contact">Contact</a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
@@ -45,56 +45,22 @@ body {
 
     <div class="container">
       <h1>Uber Fare Calculator</h1>
-      <form>
-        <table class="table">
-          <tbody>
-            <tr><td colspan="2">Enter journey details:</td></tr>
-            <tr><th>Miles:</th>
-              <td><input class="input" id="miles" name="miles"
-                         type="number"></td></tr>
-            <tr><th>Minutes:</th>
-              <td><input class="input" id="minutes" name="minutes"
-                         type="number"></td></tr>
-          </tbody>
-        </table>
-      </form>
-      <table class="table">
-        <tr>
-          <th>&nbsp;</th>
-          <th>UberX</th>
-          <th>UberXL</th>
-          <th>UberExec</th>
-          <th>UberLux</th>
-        </tr>
-        <tr>
-          <th>Base cost</th>
-          <td>£<span id="X-Base" /></td>
-          <td>£<span id="XL-Base" /></td>
-          <td>£<span id="Ex-Base" /></td>
-          <td>£<span id="Lx-Base" /></td>
-        </tr>
-        <tr>
-          <th>Mileage Cost</th>
-          <td>£<span id="X-Mile" /></td>
-          <td>£<span id="XL-Mile" /></td>
-          <td>£<span id="Ex-Mile" /></td>
-          <td>£<span id="Lx-Mile" /></td>
-        </tr>
-        <tr>
-          <th>Time Cost</th>
-          <td>£<span id="X-Time" /></td>
-          <td>£<span id="XL-Time" /></td>
-          <td>£<span id="Ex-Time" /></td>
-          <td>£<span id="Lx-Time" /></td>
-        </tr>
-        <tr>
-          <th>Total Cost</th>
-          <td>£<span id="X-Tot" /></td>
-          <td>£<span id="XL-Tot" /></td>
-          <td>£<span id="Ex-Tot" /></td>
-          <td>£<span id="Lx-Tot" /></td>
-        </tr>
-      </table>
+
+      <p>The Uber fare calculator is a simple piece of Javascript
+        silliness that was built by <a href="http://dave.org.uk/">Dave
+          Cross</a>. He is
+        <a href="https://twitter.com/davorg">@davorg</a> on Twitter
+        and would love to hear if you find this page at all useful or
+        if you have any suggestions for improvements.</p>
+      <p>The code is
+        <a href="https://github.com/davorg/ubercalc">on Github</a> and
+        pull requests are very welcome.</p>
+      <p>Uber's London prices are
+        <a href="https://www.uber.com/cities/london/">taken from their
+          web site</a>.
+      <p>The site is built using <a href="https://jquery.com/">jQuery</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> and is
+        hosted on <a href="https://pages.github.com/">Github Pages</a>.
     </div>
   </body>
 </html>
