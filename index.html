@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uber Fare Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+    <style type="text/css">
+body {
+  padding-top: 50px;
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="uber.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Uber Fare Calculator</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Uber Fare Calculator</h1>
+      <form>
+        <table class="table">
+          <tbody>
+            <tr><td colspan="2">Enter journey details:</td></tr>
+            <tr><th>Miles:</th>
+              <td><input class="input" id="miles" name="miles"
+                         type="number"></td></tr>
+            <tr><th>Minutes:</th>
+              <td><input class="input" id="minutes" name="minutes"
+                         type="number"></td></tr>
+          </tbody>
+        </table>
+      </form>
+      <table class="table">
+        <tr>
+          <th>&nbsp;</th>
+          <th>UberX</th>
+          <th>UberXL</th>
+          <th>UberExec</th>
+          <th>UberLux</th>
+        </tr>
+        <tr>
+          <th>Base cost</th>
+          <td>£<span id="X-Base" /></td>
+          <td>£<span id="XL-Base" /></td>
+          <td>£<span id="Ex-Base" /></td>
+          <td>£<span id="Lx-Base" /></td>
+        </tr>
+        <tr>
+          <th>Mileage Cost</th>
+          <td>£<span id="X-Mile" /></td>
+          <td>£<span id="XL-Mile" /></td>
+          <td>£<span id="Ex-Mile" /></td>
+          <td>£<span id="Lx-Mile" /></td>
+        </tr>
+        <tr>
+          <th>Time Cost</th>
+          <td>£<span id="X-Time" /></td>
+          <td>£<span id="XL-Time" /></td>
+          <td>£<span id="Ex-Time" /></td>
+          <td>£<span id="Lx-Time" /></td>
+        </tr>
+        <tr>
+          <th>Total Cost</th>
+          <td>£<span id="X-Tot" /></td>
+          <td>£<span id="XL-Tot" /></td>
+          <td>£<span id="Ex-Tot" /></td>
+          <td>£<span id="Lx-Tot" /></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
