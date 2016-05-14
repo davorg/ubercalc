@@ -29,16 +29,11 @@ $( document ).ready(function() {
   $( ".input" ).change(function() {
     var miles = $("#miles").val();
     var minutes = $("#minutes").val();
-    var total = {
-      X: 0,
-      XL: 0,
-      Ex: 0,
-      Lx: 0,
-    };
+    var total = {};
     if ($.isNumeric(miles) && $.isNumeric(minutes)) {
       $.each(rates, function( type, vals ) {
         $("#" + type + "-Base").text(vals["Base"].toFixed(2));
-        total[type] += vals["Base"];
+        total[type] = vals["Base"];
 
         calc_miles = vals["Mile"] * miles;
         $("#" + type + "-Mile").text(calc_miles.toFixed(2));
